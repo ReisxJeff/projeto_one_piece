@@ -1,0 +1,42 @@
+@use'variaveis';
+
+.games{
+padding: 5.6vw;
+
+    &__container{
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        @media(max-width: 768px){
+            display: block;
+        }
+
+        &__text{
+            padding: 0 2vw;
+
+            @media(max-width: 768px){
+                padding-bottom: 60px;
+            }
+            
+
+            h2{
+                margin-bottom: 20px;
+                color: variaveis.$cordeTextoPrincipal;
+            }
+
+            p{
+                color: variaveis.$cordeTextoPrincipal;
+            }
+
+        }
+
+        img{
+            max-width: 100%;
+            
+            @media(max-width: 768px){
+                padding-bottom: 60px;
+            }
+        }
+    }
+}

@@ -1,5 +1,110 @@
-$corPrimaria: rgb(0, 255, 255) ;
+@use'variaveis';
+@use'hero';
+@use'background';
+@use'views';
+@use'wanted';
+@use'games';
+@use'faq';
+@use'footer';
+@use'header';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oxygen", sans-serif;
+    list-style: none;
+}
 
 body{
-    background-color: $corPrimaria;
+    background-color: variaveis.$corPrincipal;
+}
+
+@mixin text ($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$cordeTextoSecundario;
+}
+
+@mixin title ($fontSize: 40px){
+    @include text($fontSize);
+    color: variaveis.$cordeTextoSecundario;
+}
+
+.text--big {
+    @include text(18px);
+
+    @media(max-width: 768px){
+        @include text (15px)
+    }
+}
+
+.text{
+    @include text;
+
+    @media(max-width: 768px){
+        @include text (14px)
+    }
+}
+
+.text--small {
+    @include text(16px);
+
+    @media(max-width: 768px){
+        @include text (11px)
+    }
+}
+
+.title--big{
+    @include title(44px);
+
+    @media(max-width: 768px){
+        @include title (26px)
+    }
+}
+
+.title {
+    @include title;
+
+    @media(max-width: 768px){
+        @include title (24px)
+    }
+}
+
+.title--small{
+    @include title(28px);
+
+    @media(max-width: 768px){
+        @include title (22px)
+    }
+}
+
+.link--text{
+    @include text(18px);
+    color: variaveis.$cordeTextoSecundario
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    background-color: variaveis.$corBotoes;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corBotoes;
+
+    &--dark{
+        background-color: rgba(variaveis.$corBotoes, 0.8);
+        border-color: variaveis.$cordeTextoSecundario;
+    }
+
+    &:hover{
+        background-color: variaveis.$corBotaesDois;
+    }
 }

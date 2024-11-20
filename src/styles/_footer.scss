@@ -1,0 +1,53 @@
+@use'variaveis';
+
+.footer{
+    background-color: #fff;
+    border-top: 2vh solid variaveis.$corFundo;
+    
+    &__container{
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+
+        @media(max-width: 768px){
+            padding: 5vw;
+        }
+
+        img{
+            
+            max-width: 26vw;
+            width: 100%;
+        }
+
+        &__links{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            
+            &__item{
+                
+                img{
+                    width: 3vw;
+                    height: 9vh;
+                    object-fit: contain;
+                    
+                    @media(max-width: 768px){
+                            width: 5vw;
+                            height: 15vh;
+                    }
+                }
+
+                &:nth-child(2){
+                    padding: 0 2vw;
+
+                    @media(max-width: 768px){
+                        padding: 0 5vw;
+                    }
+
+                }
+            }
+        }
+    }
+}

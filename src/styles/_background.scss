@@ -1,0 +1,44 @@
+@use'variaveis';
+
+.background{
+    padding: 5.6vw;
+
+    @media(max-width: 768px){
+        background-color: variaveis.$corFundo;
+    }
+
+    &__container{
+        background-color: variaveis.$corFundo;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        border: 2px solid transparent;
+        border-image: url(../images/borda_pergaminho.png)  80 / 60 / 60 round;
+
+        @media(max-width: 768px){
+            display: block;
+            border-image: none;
+            padding-bottom: 60px;
+        }
+
+        img{
+            max-width: 100%;
+            @media(max-width: 768px){
+                padding-bottom: 60px;
+            }
+        }
+    
+        &__text{
+            padding: 0 2vw;
+            
+            h2{
+                margin-bottom: 20px;
+                color: variaveis.$cordeTextoPrincipal;
+            }
+
+            p{
+                color: variaveis.$cordeTextoPrincipal;
+            }
+        }
+    }
+}

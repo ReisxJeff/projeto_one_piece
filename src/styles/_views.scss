@@ -1,0 +1,63 @@
+@use'variaveis';
+
+.views{
+    padding: 5.6vw;
+    margin-top: 50px;
+
+    h2{
+        text-align: center;
+        color: variaveis.$cordeTextoPrincipal;
+        margin-bottom: 35px;
+    }
+
+    &__content{
+
+        &__platforms{
+            display: flex;
+            justify-content: space-around;
+
+            @media(max-width: 768px){
+                display: block;
+                justify-content: center;
+
+            }
+            
+            &__item{
+                text-align: center;
+                width: calc(33% - 12px);
+                list-style-type: none;
+                padding: 60px 44px 44px;
+                max-width: 380px;
+                width: 100%;
+                border: 2px solid transparent;
+                border-image: url(../images/borda_pergaminho_2.png) 460 / 120 / 10 round ;
+                
+                @media(max-width: 768px){
+                    border-image: none;
+                }
+
+
+
+                img{
+                    height: 22vw;
+                    width: 20vw;
+                    max-width: 100%;
+                    background-size: cover;
+
+                    @media(max-width: 768px){
+                        height: 94vw;
+                        width: 64vw;
+                    }
+                }
+
+                
+                    a{
+                        text-decoration: none;
+                        color: variaveis.$cordeTextoPrincipal;
+                        text-transform: uppercase;
+                    }
+
+            }
+        }
+    }
+}

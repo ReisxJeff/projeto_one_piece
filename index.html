@@ -5,8 +5,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto One Piece</title>
     <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/jolly-roger.png" alt="">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item ">
+                    <a class="button button--dark" href="#acompanhe">Acompanhe</a>
+                </li>
+                <li class="header__links__item ">
+                    <a class="button button--dark" href="#duvidas">Dúvidas</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button button--dark" href="#sobre">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div  class="hero__content">
+            <div id="sobre" class="hero__content__branding">
+                <img class="hero__content__branding__logo" src="./dist/images/logo.png" alt="one Piece">
+            </div>
+            <h3 class="title--small">Riqueza, fama e poder.</h3>
+            <p>
+                <span class="text">Atravesse os mares para poder conquistar o One piece e se tornar o Rei dos piratas</span>
+            </p>
+        </div>
+    </section>
+    <section class="background">
+        <div class="background__container">
+            <img src="./dist/images/chapeis_de_palha.jpeg" alt="Chapeis de palha">
+            <div class="background__container__text">
+                <h2 class="title">One piece</h2>
+                <p class="text--big">Riqueza,fama e poder. O homem que conseguiu tudo neste mundo, o Rei dos Piratas, Gold D. Roger. Suas últimas palavrasantes antes de ser executado,
+                    foram enviadas para todos no mar. " Minhas riquezas e tesouros? Se vocês quiserem eu deixo pegar. Procurem por ele, deixei tudo naquele lugar!",
+                    assim foi dado início a era dos piratas. Alguns anos depois um jovem chamado Monkey D. Luffy. Ele comeu a Akuma no Mi conhecida como "Gomu Gomu no Mi"
+                    , ou Fruta da Borracha, que estava sob posse da tripulação do poderoso pirata Shanks, o Ruivo, o ídolo de infância de Luffy. Ao completar 17 anos, Luffy parte em uma jornada do mar 
+                    do East Blue para encontrar o tesouro lendário, o One Piece, pois seu grande sonho de vida é proclamar-se o Rei dos Piratas
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="acompanhe" class="views">
+        <h2 class="title--big">Acompanhe da sua maneira!</h2>
+        <div class="views__content">
+            <ul class="views__content__platforms">
+                <li class="views__content__platforms__item">
+                    <img src="./dist/images/volume_one_piece.jpg" alt="volume 1 one piece">
+                    <button class="button"><a class="text--small" href="https://www.amazon.com.br/One-Piece-Ed-Eiichiro-Oda/dp/8573516976/ref=asc_df_8573516976/?tag=googleshopp00-20&linkCode=df0&hvadid=709857900456&hvpos=&hvnetw=g&hvrand=17056964095433638967&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100801&hvtargid=pla-1967192197362&psc=1&mcid=6e1f8a845f86309687eb50517f1cc69f&gad_source=1">Comprar o Mangá</a></button>
+                    <span class="text--big">Compre pela Amazon*</span>
+                </li>
+                <li class="views__content__platforms__item">
+                    <img src="./dist/images/anime_one_piece.jpg" alt="anime one piece">
+                    <button class="button"><a class="text--small" href="https://www.crunchyroll.com/pt-br/series/GRMG8ZQZR/one-piece">Assista agora</a></button>
+                    <span class="text--big">Assista pela Crunchyroll*</span>
+                </li>
+                <li class="views__content__platforms__item">
+                    <img src="./dist/images/serie_one_piece.png" alt="serie one piece">
+                    <button class="button"><a class="text--small" href="https://www.netflix.com/br/title/80217863">Assista agora</a></button>
+                    <span class="text--big">Assista pela Netflix*</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="wanted">
+        <h2 class="title--big">Procurados</h2>
+        <nav class="wanted__tabs">
+            <button data-tab-button="chapeus_de_palha" class="wanted__tabs__button wanted__tabs__button--is-active">Chapéus de Palha</button>
+            <button data-tab-button="shichibukais" class="wanted__tabs__button">shichibukais</button>
+            <button data-tab-button="pior_geracao" class="wanted__tabs__button">Pior geração</button>
+        </nav>
+        <ul data-tab-id="chapeus_de_palha" class="wanted__list wanted__list--is-active">
+            <li class="wanted__list__item">
+                <img src="./dist/images/chapeis_de_palha/luffy.jpg" alt="Cartaz Luffy">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/chapeis_de_palha/zorro.jpg" alt="Cartaz Zorro">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/chapeis_de_palha/sanji.jpg" alt="Cartaz  Sanji">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/chapeis_de_palha/jinbe.jpg" alt="Cartas Jinbe">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/chapeis_de_palha//nico_robbin.jpg" alt="Cartaz Robbin">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/chapeis_de_palha/franky.jpg" alt="Cartaz Franky">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/chapeis_de_palha/brook.jpg" alt="Cartaz Brook">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/chapeis_de_palha/nami.jpg" alt="Cartaz Nami">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/chapeis_de_palha/usopp.jpg" alt="Cartaz Usopp">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/chapeis_de_palha/chopper.jpg" alt="Cartaz Chopper">
+            </li>
+        </ul>
+        <ul data-tab-id="shichibukais" class="wanted__list">
+            <li class="wanted__list__item">
+                <img src="./dist/images/shichibukai/mihawk.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/shichibukai/buggy.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/shichibukai/doflamingo.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/shichibukai/gecko_moria.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/shichibukai/kuma.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/shichibukai/crocodile.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/shichibukai/hancock.jpg" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="pior_geracao" class="wanted__list">
+            <li class="wanted__list__item">
+                <img src="./dist/images/pior_geracao/law.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/pior_geracao/kid.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/pior_geracao/teach.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/pior_geracao/urouge.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/pior_geracao/bege.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/pior_geracao/apoo.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/pior_geracao/hawkins.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/pior_geracao/x_drake.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/pior_geracao/killer.jpg" alt="">
+            </li>
+            <li class="wanted__list__item">
+                <img src="./dist/images/pior_geracao/bonney.jpg" alt="">
+            </li>
+        </ul>
+    </section>
+    <section class="games">
+        <div class="games__container">
+            <div class="games__container__text">
+                <h2 class="title">O pirata que estica no mundo dos games</h2>
+                <p class="text--big">
+                    One piece é um fenomeno no mundo todo,a criação de Eiichiro Oda teve seu inídio nos mangás,mas ela foi expandindo e consquistando seu espaço
+                    em outras plataformas, com o objetivo de conquistar novos horizontes. Dentre outras aventuras para os chapéus de palha temos o mundo dos games
+                    como uma dos principais suportes.
+                </p>
+            </div>
+            <img src="./dist/images/on_piece_game.jpg" alt="">
+        </div>
+    </section>
+    <section id="duvidas" class="faq">
+        <h2 class="title">Maiores duvidas !</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item ">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Por que o Luffy nunca mata os inimigos?
+                </div>
+                <div class="faq__questions__item__answer  text--big">
+                    Oda:Boa pergunta. Primeiramente, Morgan está vivo. Os seus subordinados o encarceraram. Agora, por que não matar os inimigos? Naquela época, as pessoas apostavam a vida e lutavam por seus propósitos. Em uma batalha, Luffy destrói o propósito do inimigo. Para o inimigo, ver seu propósito destruído é mesmo que ser derrotado. É uma dor equivalente à morte. Eu penso que, para os piratas, é vencer ou perder. Matar ou não matar é uma questão secundária,
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Qual é o maior mistério de One Piece?
+                </div>
+                <div class="faq__questions__item__answer  text--big">
+                    O Século Perdido é um dos principais mistérios que One Piece introduziu logo nos seus momentos iniciais. Esses 100 anos que foram proibidos de serem pesquisados pelo Governo Mundial contém várias respostas sobre diversos segredos do mundo.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Qual foi a maior recompensa em One Piece?
+                </div>
+                <div class="faq__questions__item__answer  text--big">
+                    A maior recompensa até hoje é a do proprio rei dos piratas Gol D. Roger de B5.564.800.000
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    O que são os poneglyph?
+                </div>
+                <div class="faq__questions__item__answer  text--big">
+                    Os Poneglyphs são pedras indestrutíveis que carregam uma escrita antiga e contêm informações sobre a história do mundo, o século perdido, mensagens, localizações de outros Poneglyphs e Armas Ancestrais
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <picture>
+                <source srcset="./dist/images/sunny-face.png" media="(max-width: 768px)">
+                <img src="./dist/images/sunny.png" alt="">
+            </picture>
+            <ul class="footer__container__links">
+                <li class="footer__container__links__item">
+                    <a href="https://github.com/ReisxJeff"><img src="./dist/images/social_links/github.png" alt="Github"></a>
+                </li>
+                <li class="footer__container__links__item">
+                    <a href="mailto:95jefferson.reis@gmail.com?subject=Fanpage%20de%20One%20Piece"> <img src="./dist/images/social_links/email.png" alt="Email"></a>
+                </li>
+                <li class="footer__container__links__item">
+                    <a href="#"><img src="./dist/images/social_links/instagram.png" alt="Instagram"></a>
+                </li>
+            </ul>
+            <p class="text--small">
+                © 2024 - Fanpage One Piece - Todos os direitos reservados - Jefferson Reis (Aluno) 
+            </p>
+        </div>
+    </footer>
+    <script src="./src/main.js"></script>
 </body>
 </html>
